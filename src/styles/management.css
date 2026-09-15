@@ -1,0 +1,108 @@
+.management-page {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.management-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.management-header nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+.management-header nav a { text-underline-offset: 0.35rem; }
+.management-header nav a.active { color: var(--accent); font-weight: 800; }
+.management-page h1 { margin-top: 2rem; line-height: 1.2; }
+.management-page h2 { margin-top: 0; }
+
+.management-card {
+  min-width: 0;
+  padding: 1.5rem;
+  margin-top: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: var(--surface);
+}
+
+.player-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.stat-list { margin: 1rem 0; }
+.stat-list > div { display: flex; justify-content: space-between; gap: 1rem; padding: 0.45rem 0; border-bottom: 1px solid var(--border); }
+.stat-list dt { color: var(--muted); }
+.stat-list dd { margin: 0; font-weight: 600; text-align: right; }
+.opponent-details > div { display: grid; grid-template-columns: minmax(8rem, 1fr) 3fr; }
+.opponent-details dd { text-align: left; }
+.condition-list { list-style: none; padding: 0; }
+.condition-list li { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; padding: 0.5rem 0; }
+.activity-options { padding: 0; border: 0; margin: 1.5rem 0; }
+.activity-options legend { font-weight: 700; margin-bottom: 0.75rem; }
+.activity-option { display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; margin: 0.5rem 0; border: 1px solid var(--border); border-radius: 2px; cursor: pointer; }
+.activity-option input { margin-top: 0.45rem; accent-color: var(--accent); flex-shrink: 0; }
+.activity-option span span { display: block; color: var(--muted); }
+.training-options { margin-bottom: 1.5rem; }
+.training-options label { display: block; margin: 1rem 0; }
+.training-options select { display: block; width: 100%; max-width: 28rem; margin-top: 0.4rem; padding: 0.75rem; border: 1px solid var(--border); border-radius: 2px; background: var(--background); color: var(--text); font: inherit; }
+.management-page input:focus-visible,
+.management-page select:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.table-scroll { overflow-x: auto; }
+.table-scroll table { width: 100%; border-collapse: collapse; min-width: 32rem; }
+.table-scroll caption { text-align: left; font-weight: 700; margin-bottom: 0.75rem; }
+.table-scroll th, .table-scroll td { text-align: left; padding: 0.65rem; border-bottom: 1px solid var(--border); }
+.table-scroll td:not(:nth-child(2)), .table-scroll thead th:not(:nth-child(2)) { text-align: right; }
+.player-standing { color: var(--accent); }
+
+.season-strip { display: flex; flex-wrap: wrap; gap: 1.5rem; color: var(--muted); font-size: 0.9rem; margin-top: 1.5rem; }
+.weekly-progress ol { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; }
+.weekly-progress li { border: 1px solid var(--border); border-radius: 2px; background: var(--surface); min-width: 0; }
+.weekly-progress a, .step-pending { display: block; padding: 0.8rem; text-decoration: none; font-weight: 650; }
+.weekly-progress a > span, .step-pending > span { display: inline-grid; place-items: center; width: 1.6rem; height: 1.6rem; margin-right: 0.4rem; border-radius: 0; background: var(--background); }
+.weekly-progress small { display: block; font-size: 0.75rem; font-weight: 400; color: var(--muted); }
+.weekly-progress .step-current { border-color: var(--accent); }
+.step-current a, .step-done a > span { color: var(--accent); }
+.step-pending { color: var(--muted); }
+.next-action { background: #1d1216; border-color: #59303a; border-left: 4px solid var(--accent-strong); padding: 1.75rem; }
+.next-action h2 { font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 0.4rem; }
+.next-action p { max-width: 46rem; }
+.management-page a.primary-button { display: inline-flex; text-decoration: none; }
+.week-layout { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 1.25rem; align-items: start; }
+.week-layout > *, .week-layout aside { min-width: 0; }
+.overview-note, .player-full-name { color: var(--muted); }
+.condition-summary { font-size: 0.9rem; color: var(--muted); }
+.management-page details { margin: 1rem 0; }
+.management-page summary { cursor: pointer; color: var(--accent); padding: 0.4rem 0; font-weight: 600; }
+.management-page summary:focus-visible, .weekly-progress a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.activity-option:has(input:checked) { background: #2d151d; border-color: var(--accent); }
+.activity-option strong { display: block; }
+.flow-return { display: inline-block; margin-bottom: 0.5rem; color: var(--accent); }
+.match-launch { display: flex; gap: 1rem; align-items: center; justify-content: space-between; }
+.match-launch h2, .match-launch p { margin: 0.3rem 0; }
+#weekly-activity { scroll-margin-top: 1rem; }
+
+@media (max-width: 760px) {
+  .week-layout { grid-template-columns: 1fr; }
+  .weekly-progress a, .step-pending { padding: 0.6rem; font-size: 0.8rem; }
+  .weekly-progress a > span, .step-pending > span { display: grid; margin-bottom: 0.4rem; }
+  .match-launch { display: block; }
+  .match-launch button { width: 100%; margin-top: 1rem; }
+  .player-grid { grid-template-columns: 1fr; }
+  .management-card { padding: 1rem; }
+  .opponent-details > div { display: block; }
+  .management-header { align-items: flex-start; }
+  .management-header nav { width: 100%; }
+}
+
+.club-strip { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem 2rem; padding: 1.4rem 0 0.5rem; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+.club-strip strong { font-size: clamp(1.2rem, 3vw, 1.8rem); text-transform: uppercase; letter-spacing: 0.03em; }
+.club-strip span { color: var(--muted); font-size: 0.85rem; }
+.management-header nav a { padding: 0.35rem 0; text-decoration: none; border-bottom: 2px solid transparent; }
+.management-header nav a.active { border-bottom-color: var(--accent-strong); color: var(--text); }
+.management-page h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5rem; }
+.weekly-progress .step-current { border-color: #753441; border-top: 3px solid var(--accent-strong); }
+.table-scroll thead { background: #202023; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em; }
+.player-standing { background: #2d151d; }
+.club-profile h2 { margin-top: 0.6rem; }
