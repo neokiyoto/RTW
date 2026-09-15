@@ -49,7 +49,6 @@ The existing version 1 save key is unchanged. Phase 6 saves with an empty match 
 - `src/styles/management.css`
 - `package.json`
 - `README.md`
-- `AGENTS.md`
 - `docs/DEVELOPMENT_ROADMAP.md`
 - `docs/FOLDER_STRUCTURE.md`
 

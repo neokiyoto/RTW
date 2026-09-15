@@ -34,7 +34,6 @@ Selections save automatically through the existing localStorage flow. Version 1 
 - `README.md` — current features, state, saving and preparation instructions.
 - `docs/DEVELOPMENT_ROADMAP.md` — Phase 5 complete; Phase 6 not started.
 - `docs/FOLDER_STRUCTURE.md` — preparation file responsibilities.
-- `AGENTS.md` — current phase status.
 
 No files were removed. No packages were installed, changed or upgraded.
 

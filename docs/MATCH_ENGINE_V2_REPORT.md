@@ -49,7 +49,6 @@ The save envelope and key remain version 1. New reports have `engineVersion: 2`.
 - `src/components/MatchReportView.tsx` — playback and visible match state.
 - `src/pages/MatchPage.tsx` — match-day heading and locked-line-up wording.
 - `package.json` — V2 test and example scripts.
-- `AGENTS.md` — revised match scope and versioning guidance.
 - `GAME_CONCEPT_V1.md` — intentional change to the commentary target.
 - `README.md` — current match behaviour and save compatibility.
 - `docs/DEVELOPMENT_ROADMAP.md` — completed V2 refinement.

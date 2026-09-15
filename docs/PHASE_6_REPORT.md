@@ -53,7 +53,6 @@ These are initial original balancing values, not a claim of finished competitive
 - `src/pages/DashboardPage.tsx`
 - `src/pages/HomePage.tsx`
 - `package.json` — includes the new test file; dependency versions unchanged.
-- `AGENTS.md`
 - `README.md`
 - `docs/DEVELOPMENT_ROADMAP.md`
 - `docs/FOLDER_STRUCTURE.md`

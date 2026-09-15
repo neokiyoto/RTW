@@ -41,7 +41,6 @@ The version 1 key and envelope remain unchanged. A missing weekly report in a Ph
 - `README.md`
 - `docs/DEVELOPMENT_ROADMAP.md`
 - `docs/FOLDER_STRUCTURE.md`
-- `AGENTS.md`
 
 No files removed. No packages installed, added or upgraded. The existing home layout and static roster/champion data are preserved. State remains in App with props through the routes; no Context or architecture replacement was needed.
 

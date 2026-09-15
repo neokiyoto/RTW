@@ -33,7 +33,6 @@ The versioned key is `text-esports-manager-save-v1`, with an envelope containing
 - `README.md`
 - `docs/DEVELOPMENT_ROADMAP.md`
 - `docs/FOLDER_STRUCTURE.md`
-- `AGENTS.md`
 
 ## Files removed
 

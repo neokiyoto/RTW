@@ -30,6 +30,6 @@ npm test
 npm run validate:data
 ```
 
-The longer design notes are in [GAME_CONCEPT_V1.md](GAME_CONCEPT_V1.md), and the [roadmap](docs/DEVELOPMENT_ROADMAP.md) explains how the game got here. [AGENTS.md](AGENTS.md) has the working guidelines for coding agents and contributors.
+The longer design notes are in [GAME_CONCEPT_V1.md](GAME_CONCEPT_V1.md), and the [roadmap](docs/DEVELOPMENT_ROADMAP.md) explains how the game got here.
 
 Everything in the game — teams, players, champions and match writing — is fictional and original.
